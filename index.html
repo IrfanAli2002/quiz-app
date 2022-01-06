@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div id="maindiv" class="main">
+        <div class="container">
+            <div class="main bg-white m-4 d-flex p-3 justify-content-between shadow">
+                <h1 class="">Quiz App</h1>
+                <div class="fs-3"><span id="curques" class="">0</span>/<span id="totalques">6</span></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main bg-white text-dark m-4 d-flex p-5 justify-content-between shadow">
+                <h3 id="dispquestion"></h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main bg-white text-dark m-4  p-5  shadow">
+                <div id="questionRow" class="row">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main d-flex justify-content-end text-dark m-4  p-5">
+                <button onclick="nextQues()" class="btn btn-light  shadow p-3 px-5 rounded">Next</button>
+            </div>
+        </div>
+    </div>
+
+        <div id="resultdiv" style="display: none;" class="container">
+            <div class="main bg-white text-dark m-4 d-flex p-5 justify-content-between shadow">
+                <h1 id="dispresult">YOUR MARKS IS <span id="percentage"></span>%</h1>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
